@@ -13,7 +13,6 @@
     --grey: rgba(46, 47, 66, 0.7);
     --white: #FFF;
     --dairy: #FCFCFC;
-
 }
 
 * {
@@ -48,80 +47,40 @@ ul {
     margin-bottom: 0;
 }
 
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 body {
     font-family: "Roboto", sans-serif;
     color: var(--slate);
     background-color: var(--white);
 }
 
-
-
-.title {
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--navy-blue);
-    text-align: center;
-}
-
-
-
-.subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--navy-blue);
-}
-
-
-
-.text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
+/* Container styles */
 .container {
-    width: 1152px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.header .container,
-.header .header-list,
-.header .contacts-list {
-    display: flex;
-    align-items: center;
-}
-
-
-/* HEADER*/
-
+/* Header styles */
 .header {
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    border-bottom: 1px solid #e7e9fc;
+    display: block;
 }
 
 .header .container {
-    margin: 60px;
-    gap: 200px;
+    display: flex;
+    align-items: center;
+    padding: 15px 0; /* Adjust as needed */
 }
 
 .header .header-list {
+    display: flex;
+    align-items: center;
     gap: 40px;
 }
 
 .header .contacts-list {
-
+    display: flex;
+    align-items: center;
     gap: 40px;
 }
 
@@ -134,16 +93,12 @@ body {
     letter-spacing: 0.03em;
     color: var(--iris);
     cursor: pointer;
-    margin-right: 77px;
-
+    margin-right: 76px;
 }
 
 .logo .logo-header {
-    margin-right: 77px;
     color: var(--navy-blue);
 }
-
-
 
 .header-nav {
     font-weight: 500;
@@ -151,6 +106,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+    padding: 24px 0; /* Add padding to the header-nav items */
 }
 
 .header-nav:hover,
@@ -158,111 +114,97 @@ body {
     color: var(--ocean);
 }
 
-
-
-.contacts {
-    font-style: normal;
-}
-
+/* Contacts styles */
 .contacts a {
     color: var(--slate);
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-/* .contacts-list .contacts-item {
-    font-family: var(--main-font);
-    font-weight: 400;
-    line-height: 1.5px;
-
-    color: var(---secondary-text-color);
-} */
-
-
 .contacts a:hover,
 .contacts a:focus {
     color: var(--iris);
 }
 
-/*HERO*/
-
+/* Hero section styles */
 .hero {
     text-align: center;
     background: #2e2f42;
+    padding: 188px 0; /* Add padding */
 }
 
 .hero-title {
-    margin: 0 auto;
-    margin-bottom: 48px;
-    width: 496px;
-
+    max-width: 496px;
+    margin: 0 auto 48px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-
     letter-spacing: 0.02em;
-
     color: #fff;
 }
 
 .hero-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    background-color: var(--iris);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-
     padding: 16px 32px;
-    letter-spacing: 0.04em;
-
     color: var(--white);
-    background-color: var(--iris);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-style: none;
-    border-radius: 4px;
-
-    cursor: pointer;
+    letter-spacing: 0.04em;
 }
-
 
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--ocean);
 }
 
-
-
-.main>.section:not(:first-child) {
-    margin-top: 0;
+/* Features section styles */
+.features {
+    padding: 120px 0; /* Adjust padding as needed */
 }
 
-
-
-.features-list,
-.team-list,
-.portfolio-list {
+.features-list {
     display: flex;
-    padding: 60px;
+    gap: 24px;
 }
 
-
-
+/* Team section styles */
 .team {
     background-color: var(--cloud);
+    padding: 120px 0; /* Adjust padding as needed */
 }
 
-.team-item {
-    background-color: #FFFFFF;
+.team-list {
+    display: flex;
+    gap: 24px;
 }
 
-
-.portfolio-item {
-    border-bottom: 1px solid #EEEEEE;
+/* Portfolio section styles */
+.portfolio {
+    padding: 120px 0; /* Adjust padding as needed */
 }
 
+.portfolio-list {
+    display: flex;
+    gap: 24px;
+}
+
+.portfolio-item img {
+    display: block;
+}
+
+/* Footer styles */
 .footer {
     color: var(--white);
     background: var(--navy-blue);
-
+    padding: 120px 0; /* Adjust padding as needed */
 }
 
 .footer p {
@@ -273,4 +215,103 @@ body {
 
 .logo .logo-footer {
     color: var(--cloud);
+}
+
+/* List and item styles */
+.features-list li,
+.team-list li,
+.portfolio-list li {
+    flex-basis: calc((100% - 72px) / 4); /* Adjust width based on gap */
+}
+
+.features-subtitle,
+.team-subtitle,
+.portfolio-subtitle {
+    margin-bottom: 8px;
+}
+/* Секція */
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-container {
+    /* Весь контент обгорнутий у div */
+}
+
+.section-title {
+    margin-bottom: 72px;
+    /* Заголовок h2 */
+}
+
+/* Список */
+.section-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    /* Гнучкий список з відступами */
+}
+
+.section-item {
+    flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    /* Перший пункт списку */
+}
+
+/* Контейнер для пункту списку */
+.item-container {
+    padding: 32px 0;
+    /* Контейнер для імені та посади */
+}
+
+.item-name {
+    text-align: center;
+    margin-bottom: 8px;
+    /* Заголовок h3 */
+}
+
+.item-position {
+    text-align: center;
+    /* Параграф p */
+}
+
+/* Стилі для всіх пунктів списку */
+.section-item {
+    flex-basis: calc((100% - 48px) / 3);
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    padding: 32px 16px;
+}
+
+.section-item:last-child {
+    margin-right: 0;
+}
+
+.section-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.section-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+/* Футер */
+.footer {
+    padding: 100px 0;
+}
+
+.container {
+    /* Контейнер футера */
+}
+
+.footer-link {
+    display: inline-block;
+    margin-bottom: 16px;
+    /* Посилання */
+}
+
+.footer-text {
+    max-width: 264px;
+    /* Параграф футера */
 }
