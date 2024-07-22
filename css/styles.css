@@ -18,6 +18,7 @@
 * {
     list-style: none;
     text-decoration: none;
+    font-style: normal;
 }
 
 html {
@@ -69,7 +70,7 @@ body {
 .header .container {
     display: flex;
     align-items: center;
-    padding: 15px 0; /* Adjust as needed */
+    padding: 15px 0;
 }
 
 .header .header-list {
@@ -82,6 +83,7 @@ body {
     display: flex;
     align-items: center;
     gap: 40px;
+    
 }
 
 .logo {
@@ -114,11 +116,12 @@ body {
     color: var(--ocean);
 }
 
-/* Contacts styles */
+
 .contacts a {
     color: var(--slate);
     line-height: 1.5;
     letter-spacing: 0.02em;
+
 }
 
 .contacts a:hover,
@@ -131,6 +134,7 @@ body {
     text-align: center;
     background: #2e2f42;
     padding: 188px 0; /* Add padding */
+    
 }
 
 .hero-title {
@@ -141,10 +145,11 @@ body {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #fff;
+    
 }
 
+
 .hero-btn {
-    display: block;
     min-width: 169px;
     height: 56px;
     background-color: var(--iris);
@@ -165,25 +170,36 @@ body {
     background-color: var(--ocean);
 }
 
-/* Features section styles */
+
 .features {
     padding: 120px 0; /* Adjust padding as needed */
+}
+
+.features-title {
+    visibility: hidden;
 }
 
 .features-list {
     display: flex;
     gap: 24px;
+    padding: 60px;
 }
 
-/* Team section styles */
+
 .team {
     background-color: var(--cloud);
     padding: 120px 0; /* Adjust padding as needed */
 }
 
+.team-title,
+.portfolio-title {
+    text-align: center;
+}
+
 .team-list {
     display: flex;
     gap: 24px;
+    padding: 60px;
 }
 
 /* Portfolio section styles */
@@ -194,6 +210,7 @@ body {
 .portfolio-list {
     display: flex;
     gap: 24px;
+    padding: 60px;
 }
 
 .portfolio-item img {
