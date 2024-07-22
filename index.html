@@ -4,39 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="header">
-        <nav class="header-nav nav">
-            <a href="./index.html" class="logo decor">Web<span class="logo-dark">Studio</span></a>
-            <ul>
-                <li><a href="./index.html" class="header-link decor">Studio</a></li>
-                <li><a href="" class="header-link decor">Portfolio</a></li>
-                <li><a href="" class="header-link decor">Contacts</a></li>
-            </ul>
-        </nav>
-        <address class="address">
-            <ul>
-                <li><a href="mailto:info@devstudio.com" class="address-link decor">info@devstudio.com</a></li>
-                <li><a href="tel:+110001111111" class="phone-link decor">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
+        <div class="container">
+            <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
+                <nav>
+                    <ul class="header-list">
+                        <li><a href="./index.html" class="header-nav">Studio</a></li>
+                        <li><a href="" class="header-nav">Portfolio</a></li>
+                        <li><a href="" class="header-nav">Contacts</a></li>
+                    </ul>
+                </nav>
+            <address class="contacts">
+                <ul class="contacts-list">
+                    <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
+                    <li><a href="tel:+110001111111" class="contacts-item">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+        </div> 
     </header>
     
     <main class="main">
         <section class="hero">
-            <h1 class="hero-title">Effective Solutions for Your Business</h1>
+            <div class="container"> </div><h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button class="hero-btn" type="button">Order Service</button>
+            </div> 
         </section>
 
         <section class="features">
-            <h2 class="features-title title">Our Advantages</h2>
-            <ul>
+            <div class="container"> </div><h2 class="features-title title">Our Advantages</h2>
+            <ul class="features-list">
                 <li class="features-item">
                     <h3 class="features-subtitle subtitle">Strategy</h3>
                     <p class="features-text text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
@@ -54,10 +57,11 @@
                     <p class="features-text text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                 </li>
             </ul>
+            </div>
         </section>
 
         <section class="team">
-            <h2 class="team-title title">Our Team</h2>
+            <div class="container"> </div><h2 class="team-title title">Our Team</h2>
             <ul class="team-list">
                 <li class="team-item">
                     <img src="./images/team/markguerrero.jpg" alt="Mark Guerrero" width="264" height="260">
@@ -80,11 +84,12 @@
                     <p class="team-text text">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
 
         <section class="portfolio">
-            <h2 class="portfolio-title title">Our Portfolio</h2>
-            <ul>
+            <div class="container"> </div><h2 class="portfolio-title title">Our Portfolio</h2>
+            <ul class="portfolio-list">
                 <li class="portfolio-item">
                     <img src="./images/portfolio/bankingapp.jpg" alt="Banking App" width="360" height="300">
                     <h3 class="portfolio-subtitle subtitle">Banking App</h3>
@@ -111,17 +116,19 @@
                     <p class="portfolio-text text">Design</p>
                 </li>
                 <li class="portfolio-item">
-                     <img src="./images/portfolio/onlinecourses.jpg" alt="Online Courses" width="360" height="300">
+                    <img src="./images/portfolio/onlinecourses.jpg" alt="Online Courses" width="360" height="300">
                     <h3 class="portfolio-subtitle subtitle">Online Courses</h3>
                     <p class="portfolio-text text">Marketing</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <a href="./index.html" class="logo decor">Web<span class="logo-text logo-light">Studio</span></a>
-        <p class="logo">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-</footer>
+    <section class="footer">
+        <div class="container"> </div><a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
+            <p class="logo-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+        </div>
+    </footer>
 </body>
 </html>
