@@ -65,25 +65,32 @@ body {
 .header {
     border-bottom: 1px solid #e7e9fc;
     display: block;
+    padding: 0 15px;
 }
+
 
 .header .container {
     display: flex;
     align-items: center;
     padding: 15px 0;
+    align-items: center
 }
 
-.header .header-list {
+.header .header-list,
+.nav  {
     display: flex;
     align-items: center;
     gap: 40px;
+    padding: 0 15px;
+
 }
 
 .header .contacts-list {
     display: flex;
     align-items: center;
     gap: 40px;
-    
+    padding: 0 15px;
+
 }
 
 .logo {
@@ -108,7 +115,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
-    padding: 24px 0; /* Add padding to the header-nav items */
+    padding: 24px 0; 
 }
 
 .header-nav:hover,
@@ -116,12 +123,14 @@ body {
     color: var(--ocean);
 }
 
+.contacts {
+    margin-left: auto;
+}
 
 .contacts a {
     color: var(--slate);
     line-height: 1.5;
     letter-spacing: 0.02em;
-
 }
 
 .contacts a:hover,
@@ -129,12 +138,16 @@ body {
     color: var(--iris);
 }
 
-/* Hero section styles */
+
 .hero {
     text-align: center;
     background: #2e2f42;
-    padding: 188px 0; /* Add padding */
+    padding: 188px 0;
     
+}
+
+.hero .container {
+    justify-content: center;
 }
 
 .hero-title {
@@ -163,13 +176,13 @@ body {
     padding: 16px 32px;
     color: var(--white);
     letter-spacing: 0.04em;
+    display: block;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--ocean);
 }
-
 
 .features {
     padding: 120px 0; /* Adjust padding as needed */
