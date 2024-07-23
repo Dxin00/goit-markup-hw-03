@@ -303,11 +303,9 @@ margin: 0px auto;
 
 .team {
     background-color: var(--cloud);
-}
-
-.team-container {
     padding: 120px 0;
 }
+
 
 .team-title {
     font-weight: 700;
@@ -325,21 +323,23 @@ margin: 0px auto;
     justify-content: center;
     align-items: center;
     gap: 24px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .team-item {
     color: var(--navy-blue);
     background-color: var(--white);
-    border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    
 }
 
-.team-text {
+.team-info {
     padding: 32px 0;
-    text-align: center;
 }
+
 
 .team-subtitle {
     font-weight: 500;
@@ -355,16 +355,21 @@ margin: 0px auto;
 }
 
 .team-text {
+    
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 32px 0;
+    text-align: center;
     color: var(--slate);
+
     
 }
 
 .portfolio {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -382,8 +387,11 @@ margin: 0px auto;
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
     row-gap: 48px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .portfolio-item {
@@ -391,9 +399,9 @@ margin: 0px auto;
     border-radius: 0px 0px 4px 4px;
 }
 
-.portfolio-text {
+.portfolio-info {
     padding: 32px 16px;
-    border: 1px solid var(--cornflower);
+    border: 1px solid #e7e9fc;
     border-top: none;
 }
 
@@ -406,7 +414,10 @@ margin: 0px auto;
     margin-bottom: 8px;
 }
 
-.portfolio-projects-text {
+.portfolio-text {
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower);
+    border-top: none;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -415,9 +426,11 @@ margin: 0px auto;
     background-color: var(--white);
 }
 
+
 .footer {
     color: var(--white);
     background: var(--navy-blue);
+    padding: 100px 0;
 }
 
 .footer p {
@@ -426,8 +439,6 @@ margin: 0px auto;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-
-.footer-text {}
 
 .logo-light {
     color: var(--cloud);
@@ -442,6 +453,8 @@ margin: 0px auto;
     text-transform: uppercase;
     text-decoration: none;
     margin-bottom: 48px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-nav {
