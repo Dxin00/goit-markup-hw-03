@@ -79,6 +79,7 @@ ul {
     justify-content: center;
     height: 72px;
     align-items: center;
+    padding: 24px 0;
 }
 
 .header-nav {
@@ -90,7 +91,7 @@ ul {
 .header-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
+
 
     
     
@@ -166,7 +167,7 @@ ul {
 
 .hero {
     background: #2e2f42;
-    padding: 188px;
+    padding: 188px 0;
     margin-right: auto;
     margin-left: auto;
 }
@@ -200,6 +201,7 @@ border: none;
 border-radius: 4px;
 cursor: pointer;
 margin: 0px auto;
+margin-top: 48px;
 }
 
 
@@ -422,7 +424,7 @@ margin: 0px auto;
 .footer {
     color: var(--white);
     background: var(--navy-blue);
-    padding: 120px 0;
+    padding: 100px 0;
 }
 
 .footer p {
