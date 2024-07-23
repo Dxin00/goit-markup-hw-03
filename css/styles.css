@@ -171,10 +171,6 @@ ul {
     margin-left: auto;
 }
 
-.hero-container {
-    align-items: center;
-
-}
 
 
 .hero-title {
@@ -222,10 +218,6 @@ margin: 0px auto;
 .features {
         padding: 120px 0px 120px
         }
-
-.features-container {
-
-    }
 
 
 .visually-hidden {
@@ -430,7 +422,7 @@ margin: 0px auto;
 .footer {
     color: var(--white);
     background: var(--navy-blue);
-    padding: 100px 0;
+    padding: 120px 0;
 }
 
 .footer p {
@@ -485,7 +477,4 @@ margin: 0px auto;
     color: var(--cloud);
 }
 
-.footer-container {
-    padding: 120px 0;
-}
 
