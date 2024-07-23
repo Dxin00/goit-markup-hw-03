@@ -107,7 +107,7 @@ ul {
 
     display: block;
     width: calc((100%-72px) / 4);
-    
+    padding: 24px 0;
 }
 
 .header-link:hover,
@@ -126,7 +126,6 @@ ul {
     color: #4d5ae5;
     text-decoration: none;
     margin-right: 76px;
-    padding: 24px 0;
 }
 
 .logo-dark {
