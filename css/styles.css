@@ -30,7 +30,9 @@ h6 {
     margin: 0px auto
 }
 
-
+img {
+    display: block;
+}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -42,7 +44,6 @@ ul {
     list-style: none;
 
 }
-
 .title {
     font-size: 36px;
     line-height: 1.11;
@@ -50,15 +51,15 @@ ul {
     text-transform: capitalize;
     color: var(--navy-blue);
     text-align: center;
-
+    
 }
-
 .subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue)
+    
 }
 
 .text {
@@ -66,7 +67,7 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
+    
 }
 
 .header {
@@ -83,15 +84,16 @@ ul {
 .header-nav {
     display: flex;
     align-items: center;
-
+    
 }
 
 .header-list {
     display: flex;
     gap: 40px;
-    padding: 0;
+    padding: 24px 0;
 
-
+    
+    
 }
 
 .header-link {
@@ -102,13 +104,13 @@ ul {
     color: var(--navy-blue);
     text-decoration: none;
     padding: 0;
-    margin: 0;
-    text-decoration: none;
-    color: #2e2f42;
+        margin: 0;
+        text-decoration: none;
+        color: #2e2f42;
 
-    display: block;
-    width: calc((100%-72px) / 4);
-
+        display: block;
+        width: calc((100%-72px) / 4);
+    
 }
 
 .header-link:hover,
@@ -156,7 +158,6 @@ ul {
     color: var(--iris);
 
 }
-
 .address a:hover,
 .address a:focus {
     color: var(--ocean);
@@ -172,6 +173,7 @@ ul {
 
 .hero-container {
     align-items: center;
+
 }
 
 
@@ -188,39 +190,42 @@ ul {
 
 .hero-btn {
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    background-color: #4d5ae5;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #fff;
-    display: block;
-    align-items: center;
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 48px auto 0;
+font-weight: 500;
+background-color: #4d5ae5;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+display: block;
+align-items: center;
+min-width: 169px;
+height: 56px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+margin: 0px auto;
 }
 
 
 .hero-btn:hover {
     background-color: var(--ocean)
 }
-
 .hero-btn:focus {
-    background-color: var(--ocean);
+  background-color: var(--ocean);
 }
 
-.main {}
+.main {
+        
+}
 
 
 .features {
-    padding: 120px 0px 120px
-}
+        padding: 120px 0px 120px
+        }
 
-.features-container {}
+.features-container {
+
+    }
 
 
 .visually-hidden {
@@ -328,7 +333,7 @@ ul {
     border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-
+    
 }
 
 .team-text {
@@ -346,7 +351,7 @@ ul {
     display: flex;
     justify-content: center;
     text-align: center;
-
+    
 }
 
 .team-text {
@@ -355,7 +360,7 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
-
+    
 }
 
 .portfolio {
@@ -471,133 +476,3 @@ ul {
     padding: 120px 0;
 }
 
-.contact {
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    list-style-type: none;
-    color: var(--white);
-}
-
-.contact a {
-    color: var(--white);
-    text-decoration: none;
-}
-
-.contact a:hover,
-.contact a:focus {
-    color: var(--white);
-    text-decoration: none;
-}
-
-.contact a:active {
-    color: var(--white);
-    text-decoration: none;
-}
-
-.modal-backdrop {
-    background: var(--navy-blue-modal);
-}
-
-.modal {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--grey);
-    background-color: var(--white);
-    width: 500px;
-    border-radius: 8px;
-}
-
-.modal-title {
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: var(--navy-blue);
-}
-
-.modal-header {
-    padding: 32px;
-    border-bottom: 1px solid var(--cornflower);
-}
-
-.modal-body {
-    padding: 32px;
-    border-bottom: 1px solid var(--cornflower);
-}
-
-.modal-form {
-    font-family: "Roboto";
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--grey);
-    background-color: var(--white);
-    padding: 0;
-    border: none;
-}
-
-.modal-input-wrapper {
-    position: relative;
-    margin-bottom: 24px;
-}
-
-.modal-label {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate);
-}
-
-.modal-input {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate);
-    background-color: var(--white);
-    width: 100%;
-    padding: 15px 16px;
-    border: 1px solid var(--cornflower);
-    border-radius: 4px;
-}
-
-.modal-btn {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    background-color: var(--iris);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--white);
-    display: block;
-    align-items: center;
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 0;
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-    background-color: var(--ocean);
-}
-
-.modal-btn:active {
-    background-color: var(--iris);
-}
-
-.modal-wrapper {
-    background: var(--navy-blue-modal);
-}
