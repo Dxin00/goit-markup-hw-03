@@ -90,7 +90,7 @@ ul {
 .header-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
+
 }
 
 .header-link {
@@ -126,6 +126,7 @@ ul {
     color: #4d5ae5;
     text-decoration: none;
     margin-right: 76px;
+    padding: 24px 0;
 }
 
 .logo-dark {
