@@ -90,7 +90,9 @@ ul {
 .header-list {
     display: flex;
     gap: 40px;
-
+    padding-inline-start: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .header-link {
@@ -98,16 +100,12 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
     color: var(--navy-blue);
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
     color: #2e2f42;
 
+    text-decoration: none;
     display: block;
-    width: calc((100%-72px) / 4);
-    padding: 24px 0;
 }
 
 .header-link:hover,
@@ -406,7 +404,7 @@ margin-top: 48px;
 
 .portfolio-text {
     padding: 32px 16px;
-    border: 1px solid var(--cornflower);
+    /* border: 1px solid var(--cornflower); */
     border-top: none;
     font-weight: 400;
     font-size: 16px;
